@@ -2,7 +2,7 @@ import boto3
 
 client = boto3.client('sns')    
 
-def send_sns(sns_topic_arn=None,sns_subject=None,sns_message=None,sns_source=None):
+def send_sns(sns_topic_arn="",sns_subject="",sns_message="",sns_source=""):
 
     full_subject = sns_subject + " : " + sns_source
 
