@@ -1,6 +1,6 @@
 import boto3
 
-client = boto3.client('sns')    
+client = boto3.client('sns',region_name='ap-southeast-2')    
 
 def send_sns(sns_topic_arn="",sns_subject="",sns_message="",sns_source=""):
 
